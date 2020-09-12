@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    tools:context=".ui.MainActivity">
+
+    <EditText
+        android:id="@+id/summonerNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_summoner_name"
+        android:inputType="text"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/search"
+        app:layout_constraintTop_toBottomOf="@id/summonerNameEditText" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/searchButton"
+        tools:text="Shinku443" />
+
+    <TextView
+        android:id="@+id/rankTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameTextView"
+        tools:text="Silver II" />
+
+    <TextView
+        android:id="@+id/levelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rankTextView"
+        tools:text="Level 0"/>
+
+    <TextView
+        android:id="@+id/winTitleTextView"
+        style="@style/NumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/wins"
+        app:layout_constraintEnd_toStartOf="@+id/lossTitleTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/levelTextView" />
+
+    <TextView
+        android:id="@+id/winTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/winTitleTextView"
+        app:layout_constraintStart_toStartOf="@id/winTitleTextView"
+        app:layout_constraintTop_toBottomOf="@id/winTitleTextView"
+        tools:text="1234" />
+
+    <TextView
+        android:id="@+id/lossTitleTextView"
+        style="@style/NumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/losses"
+        app:layout_constraintEnd_toStartOf="@+id/percentTitleTextView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/winTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/winTitleTextView" />
+
+    <TextView
+        android:id="@+id/lossTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/lossTitleTextView"
+        app:layout_constraintStart_toStartOf="@id/lossTitleTextView"
+        app:layout_constraintTop_toBottomOf="@id/lossTitleTextView"
+        tools:text="1234" />
+
+    <TextView
+        android:id="@+id/percentTitleTextView"
+        style="@style/NumberTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/win"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/lossTitleTextView"
+        app:layout_constraintTop_toTopOf="@+id/winTitleTextView" />
+
+    <TextView
+        android:id="@+id/percentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/percentTitleTextView"
+        app:layout_constraintStart_toStartOf="@id/percentTitleTextView"
+        app:layout_constraintTop_toBottomOf="@id/percentTitleTextView"
+        tools:text="1234" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Test App</string>
+    <string name="wins">Wins</string>
+    <string name="losses">Losses</string>
+    <string name="win">Win Ratio</string>
+    <string name="win_ratio">%s %%</string>
+    <string name="level">Level %s</string>
+    <string name="enter_summoner_name">Enter summoner name</string>
+    <string name="search">Search</string>
+</resources>
