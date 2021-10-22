@@ -7,7 +7,7 @@ class SummonerRepository @Inject constructor(
     private val networkService: CustomNetworkService
 ) {
 
-    private val apiKey = "RGAPI-92f71f1c-7e33-4187-9192-5cceb3963078"
+    private val apiKey = "RGAPI-d9a235bc-d629-431b-9d71-2f3bf12a1da1"
 
     fun getSummoner(summonerName: String) = networkService.getSummonerByName(summonerName, apiKey)
 
